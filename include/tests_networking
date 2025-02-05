@@ -768,7 +768,7 @@
                         fi
 
                         if [ ${UNCOMMON_PROTOCOL_DISABLED} -eq 0 ]; then
-                            ReportSuggestion "${TEST_NO}" "Determine if protocol '${P}' is really needed on this system"
+                            ReportSuggestion "${TEST_NO}" "Determine if protocol '${P}' is really needed on this system, and disable module if it is not needed."
                             Report "uncommon_network_protocol_enabled=${P}"
                             FOUND_UNCOMMON_PROTOCOL_ENABLED=1
                         fi
